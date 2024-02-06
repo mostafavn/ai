@@ -1,26 +1,38 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-import sys, os
-from openai import OpenAI
-from termcolor import cprint
+try:
+    import sys, os
+    from openai import OpenAI
+    from termcolor import cprint
+except:
+    print('There is an error in importing libraries. Please enter the following command first and then send your request again')
+    print('pip3 install --upgrade openai && pip3 install --upgrade termcolor')
+    sys.exit()
+    
+try:
+    faq = " ".join(sys.argv[1:])
+    if faq == "":
+        cprint("You haven't entered any text [eg:", 'light_red'), cprint("ai EnterYourTextHere","light_green", attrs=["bold"])
+    elif faq == '-h' or faq == '--help' or faq == 'man':
+        os.system('man ai')
 
-faq = " ".join(sys.argv[1:])
-if faq == "":
-    print("pleas Enter your text (-h)")
-elif faq == '-h' or faq == '--help' or faq == 'man':
-    os.system('man ai')
+    else:
+        try:
+            # completion = OpenAI().chat.completions.create(
+            #     model="gpt-3.5-turbo",
+            #     messages=[{"role": "user", "content": faq}]
+            # )
+            # print(completion.choices[0].message)
+            cprint(faq, "light_cyan", attrs=["bold"])
+        except:
+            print('Unfortunately, communication was not established')
+            sys.exit()
 
-else:
-    # completion = OpenAI().chat.completions.create(
-    #     model="gpt-3.5-turbo",
-    #     messages=[{"role": "user", "content": faq}]
-    # )
-    # print(completion.choices[0].message)
-    cprint(faq, "light_magenta", attrs=["bold"], file=sys.stderr)
-
-
-
+except:
+    print('An unknown error has occurred')
+    print('You can send your support request on GitHub')
+    sys.exit()
 
 
 
