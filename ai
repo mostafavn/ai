@@ -1,0 +1,15 @@
+#!/usr/bin/python3
+
+import sys, os
+from openai import OpenAI
+
+faq = " ".join(sys.argv[1:])
+if faq == "":
+    print("pleas Enter your text (-h)")
+else:
+    # completion = OpenAI().chat.completions.create(
+    #     model="gpt-3.5-turbo",
+    #     messages=[{"role": "user", "content": faq}]
+    # )
+    # print(completion.choices[0].message)
+    print('ok')
