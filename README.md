@@ -1,9 +1,38 @@
-<h1 align="center">Hi 👋, I'm cli-ai</h1>
-<h3 align="center">Chat with chatgpt in your command line</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=mostafa-vn&label=Profile%20views&color=0e75b6&style=flat" alt="mostafa-vn" /> </p>
+# CLI-AI
 
-- 🔭 I’m currently working on [mci.ir](https://mci.ir)
+Chat with ChatGPT-3 in your GNU/Linux command line
 
-<h3 align="left">creaed by</h3>
-<p align="left"> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
+
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+
+## Installation
+
+```bash
+curl -O https://raw.githubusercontent.com/mostafa-vn/ai/main/install.sh && sudo bash install.sh
+```
+## Screenshots
+
+![App Screenshot](https://raw.githubusercontent.com/mostafa-vn/ai/main/screen.gif)
+
+
+## Usage
+
+Just call it to chat
+
+```bash
+ai AskYourQuestion
+```
+
+
+## Features
+
+- Easy to use
+- Free and free
+- Completely safe
+- Very fast
+
+
+## Authors
+
+- [@mostafa-vn](https://www.github.com/mostafa-vn)
