@@ -1,7 +1,9 @@
 #!/usr/bin/python3
+# -*- coding: utf-8 -*-
 
 import sys, os
 from openai import OpenAI
+from termcolor import cprint
 
 faq = " ".join(sys.argv[1:])
 if faq == "":
@@ -15,7 +17,7 @@ else:
     #     messages=[{"role": "user", "content": faq}]
     # )
     # print(completion.choices[0].message)
-    print(faq)
+    cprint(faq, "light_yellow", attrs=["bold"], file=sys.stderr)
 
 
 
