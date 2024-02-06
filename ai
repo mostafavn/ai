@@ -17,7 +17,7 @@ else:
     #     messages=[{"role": "user", "content": faq}]
     # )
     # print(completion.choices[0].message)
-    cprint(faq, "light_yellow", attrs=["bold"], file=sys.stderr)
+    cprint(faq, "light_magenta", attrs=["bold"], file=sys.stderr)
 
 
 
