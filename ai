@@ -6,10 +6,25 @@ from openai import OpenAI
 faq = " ".join(sys.argv[1:])
 if faq == "":
     print("pleas Enter your text (-h)")
+elif faq == '-h' or faq == '--help' or faq == 'man':
+    os.system('man ai')
+
 else:
     # completion = OpenAI().chat.completions.create(
     #     model="gpt-3.5-turbo",
     #     messages=[{"role": "user", "content": faq}]
     # )
     # print(completion.choices[0].message)
-    print('ok')
+    print(faq)
+
+
+
+
+
+
+
+
+
+
+
+# curl -O https://raw.githubusercontent.com/mostafa-vn/ai/main/install.sh && sudo bash install.sh
