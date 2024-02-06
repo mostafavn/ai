@@ -3,3 +3,4 @@ pip3 install --upgrade openai
 curl -O https://raw.githubusercontent.com/mostafa-vn/ai/main/ai
 mv ./ai /usr/bin
 chmod +x /usr/bin/ai
+rm ./install.sh
