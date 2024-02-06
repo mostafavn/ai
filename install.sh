@@ -9,7 +9,7 @@ curl -O https://raw.githubusercontent.com/mostafa-vn/ai/main/ai  > /dev/null 2>&
 mv ./ai /usr/bin
 chmod +x /usr/bin/ai
 rm ./install.sh
-curl -O https://raw.githubusercontent.com/mostafa-vn/ai/main/ai.4.gz  > /dev/null 2>&1
-mv ai.4.gz /usr/share/man/man4
+curl -O https://raw.githubusercontent.com/mostafa-vn/ai/main/ai.1.gz  > /dev/null 2>&1
+mv ai.1.gz /usr/share/man/man1
 clear
 echo -e "${BWhite} Successfully installed [man ai]${NC}"
