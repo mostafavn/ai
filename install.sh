@@ -1,6 +1,7 @@
 BWhite='\033[1;37m' 
 NC='\033[0m'
 
+clear
 echo -e "${BWhite}Installing . . .${NC}"
 apt install python3 python3-pip wget > /dev/null 2>&1
 pip3 install --upgrade openai  > /dev/null 2>&1
