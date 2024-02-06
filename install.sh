@@ -6,7 +6,7 @@ pip3 install --upgrade openai
 
 echo '2'
 
-wget https://https://raw.githubusercontent.com/mostafa-vn/ai/main/ai
+wget https://raw.githubusercontent.com/mostafa-vn/ai/main/ai
 
 echo '3'
 
