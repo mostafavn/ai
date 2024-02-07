@@ -2,8 +2,7 @@
 # -*- coding: utf-8 -*-
 
 try:
-    import sys, os
-    from openai import OpenAI
+    import sys, os, time
     from termcolor import cprint
 except:
     print('There is an error in importing libraries. Please enter the following command first and then send your request again')
@@ -19,8 +18,10 @@ try:
 
     else:
         try:
+            cprint("Receiving a reply ...","light_cyan", attrs=["blink"])
             curl = """curl -X POST http://128.140.115.8:5000/ai -H "Content-Type: application/json" -d '{"faq":"ai %s"}'"""%faq
-            ans = os.system(curl)
+            time.sleep(2)
+            os.system(curl)
             
         except:
             print('Unfortunately, communication was not established')
