@@ -19,12 +19,9 @@ try:
 
     else:
         try:
-            # completion = OpenAI().chat.completions.create(
-            #     model="gpt-3.5-turbo",
-            #     messages=[{"role": "user", "content": faq}]
-            # )
-            # print(completion.choices[0].message)
-            cprint(faq, "light_cyan", attrs=["bold"])
+            curl = """curl -X POST http://128.140.115.8:5000/ai -H "Content-Type: application/json" -d '{"faq":"ai %s"}'"""%faq
+            ans = os.system(curl)
+            
         except:
             print('Unfortunately, communication was not established')
             sys.exit()
@@ -33,12 +30,3 @@ except:
     print('An unknown error has occurred')
     print('You can send your support request on GitHub')
     sys.exit()
-
-
-
-
-
-
-
-
-# curl -O https://raw.githubusercontent.com/mostafa-vn/ai/main/install.sh && sudo bash install.sh
